@@ -6,7 +6,6 @@ Source0:        http://tmrc.mit.edu/mirror/twisted/Names/0.4/TwistedNames-%{vers
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/projects/names/
-BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel python-twisted-core
 Requires:       python-twisted-core
 
