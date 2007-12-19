@@ -1,7 +1,7 @@
 Summary:        An DNS protocol implementation with client and server
 Name:           python-twisted-names
 Version: 0.4.0
-Release: %mkrel 1
+Release: %mkrel 2
 Source0:        http://tmrc.mit.edu/mirror/twisted/Names/0.4/TwistedNames-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
