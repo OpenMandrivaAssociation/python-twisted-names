@@ -17,7 +17,7 @@ library.
 Twisted Names comes with an "out of the box" nameserver which can read most 
 BIND-syntax zone files as well as a simple Python-based configuration format. 
 Twisted Names can act as an authoritative server, perform zone transfers from 
-a master to act as a secondary, act as a caching nameserver, or any combination 
+a master to act as a secondary, act as a caching nameserver, or any combination
 of these. 
 
 Twisted Names' client resolver library provides functions to query for all 
