@@ -1,11 +1,14 @@
+%define version 8.1.0
+%define rel 1
+
 Summary:        An DNS protocol implementation with client and server
 Name:           python-twisted-names
-Version: 0.4.0
-Release: %mkrel 2
-Source0:        http://tmrc.mit.edu/mirror/twisted/Names/0.4/TwistedNames-%{version}.tar.bz2
+Version: %version
+Release: %mkrel %rel
+Source0:        http://tmrc.mit.edu/mirror/twisted/Names/8.1/TwistedNames-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
-URL:            http://twistedmatrix.com/projects/names/
+URL:            http://twistedmatrix.com/trac/wiki/TwistedNames
 BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel python-twisted-core
 Requires:       python-twisted-core
