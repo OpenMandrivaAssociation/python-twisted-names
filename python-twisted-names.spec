@@ -1,5 +1,5 @@
-%define version 8.1.0
-%define rel 2
+%define version 8.2.0
+%define rel 1
 
 Summary:        An DNS protocol implementation with client and server
 Name:           python-twisted-names
@@ -14,17 +14,17 @@ BuildRequires:	python-devel python-twisted-core
 Requires:       python-twisted-core
 
 %description
-Twisted Names is both a domain name server as well as a client resolver 
+Twisted Names is both a domain name server as well as a client resolver
 library.
 
-Twisted Names comes with an "out of the box" nameserver which can read most 
-BIND-syntax zone files as well as a simple Python-based configuration format. 
-Twisted Names can act as an authoritative server, perform zone transfers from 
+Twisted Names comes with an "out of the box" nameserver which can read most
+BIND-syntax zone files as well as a simple Python-based configuration format.
+Twisted Names can act as an authoritative server, perform zone transfers from
 a master to act as a secondary, act as a caching nameserver, or any combination
-of these. 
+of these.
 
-Twisted Names' client resolver library provides functions to query for all 
-commonly used record types as well as a replacement for the blocking 
+Twisted Names' client resolver library provides functions to query for all
+commonly used record types as well as a replacement for the blocking
 gethostbyname() function provided by the Python stdlib socket module.
 
 %prep
