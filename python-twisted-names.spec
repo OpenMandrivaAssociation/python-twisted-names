@@ -1,11 +1,13 @@
-%define version 8.2.0
+%define version 9.0.0
 %define rel 1
+%define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
+
 
 Summary:        An DNS protocol implementation with client and server
 Name:           python-twisted-names
 Version: %version
 Release: %mkrel %rel
-Source0:        http://tmrc.mit.edu/mirror/twisted/Names/8.1/TwistedNames-%{version}.tar.bz2
+Source0:        http://tmrc.mit.edu/mirror/twisted/Names/%{mainver}/TwistedNames-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedNames
