@@ -1,17 +1,13 @@
-%define name python-twisted-names
-%define version 10.1.0
-%define rel 3
 %define mainver %(echo %{version} | sed -e 's/\\([0-9]*\\.[0-9]*\\)\\.[0-9]*/\\1/')
 
 Summary:        An DNS protocol implementation with client and server
-Name:           %{name}
-Version:	%{version}
-Release:	%mkrel %{rel}
-Source0:        http://tmrc.mit.edu/mirror/twisted/Names/%{mainver}/TwistedNames-%{version}.tar.bz2
+Name:           python-twisted-names
+Version:	12.2.0
+Release:	1
+Source0:        http://twistedmatrix.com/Releases/Names/%{mainver}/TwistedNames-%{version}.tar.bz2
 License:        MIT
 Group:          Development/Python
 URL:            http://twistedmatrix.com/trac/wiki/TwistedNames
-BuildRoot:      %{_tmppath}/%{name}-buildroot
 BuildRequires:	python-devel python-twisted-core
 Requires:       python-twisted-core
 
@@ -36,11 +32,7 @@ gethostbyname() function provided by the Python stdlib socket module.
 %__python setup.py build
 
 %install
-%__rm -rf %{buildroot}
 %__python setup.py install --root=%{buildroot} --install-purelib=%{py_platsitedir}
-
-%clean
-%__rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
@@ -49,4 +41,3 @@ gethostbyname() function provided by the Python stdlib socket module.
 %py_platsitedir/twisted/names/*
 %py_platsitedir/twisted/plugins/*
 %py_platsitedir/*.egg-info
-
