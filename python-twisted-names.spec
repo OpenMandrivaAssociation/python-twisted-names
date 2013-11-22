@@ -5,16 +5,17 @@
 # should be located in the same place
 %define debug_package %{nil}
 
-Summary:        An DNS protocol implementation with client and server
-Name:           python-twisted-names
+Summary:	An DNS protocol implementation with client and server
+Name:		python-twisted-names
 Version:	13.0.0
 Release:	1
-Source0:        http://twistedmatrix.com/Releases/Names/%{mainver}/TwistedNames-%{version}.tar.bz2
-License:        MIT
-Group:          Development/Python
-URL:            http://twistedmatrix.com/trac/wiki/TwistedNames
-BuildRequires:	python-devel python-twisted-core
-Requires:       python-twisted-core
+License:	MIT
+Group:		Development/Python
+Url:		http://twistedmatrix.com/trac/wiki/TwistedNames
+Source0:	http://twistedmatrix.com/Releases/Names/%{mainver}/TwistedNames-%{version}.tar.bz2
+BuildRequires:	pkgconfig(python)
+BuildRequires:	python-twisted-core
+Requires:	python-twisted-core
 
 %description
 Twisted Names is both a domain name server as well as a client resolver
@@ -31,7 +32,7 @@ commonly used record types as well as a replacement for the blocking
 gethostbyname() function provided by the Python stdlib socket module.
 
 %prep
-%setup -q -n TwistedNames-%version
+%setup -qn TwistedNames-%version
 
 %build
 %__python setup.py build
@@ -42,7 +43,8 @@ gethostbyname() function provided by the Python stdlib socket module.
 %files
 %defattr(0644,root,root,0755)
 %doc LICENSE README doc/*
-%dir %py_platsitedir/twisted/names
-%py_platsitedir/twisted/names/*
-%py_platsitedir/twisted/plugins/*
-%py_platsitedir/*.egg-info
+%dir %{py_platsitedir}/twisted/names
+%{py_platsitedir}/twisted/names/*
+%{py_platsitedir}/twisted/plugins/*
+%{py_platsitedir}/*.egg-info
+
