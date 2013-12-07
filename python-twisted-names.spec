@@ -8,7 +8,7 @@
 Summary:	An DNS protocol implementation with client and server
 Name:		python-twisted-names
 Version:	13.0.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/trac/wiki/TwistedNames
