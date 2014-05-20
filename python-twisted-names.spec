@@ -43,7 +43,7 @@ gethostbyname() function provided by the Python stdlib socket module.
 
 %files
 %defattr(0644,root,root,0755)
-%doc LICENSE README doc/*
+%doc LICENSE README *
 %dir %{py_platsitedir}/twisted/names
 %{py_platsitedir}/twisted/names/*
 %{py_platsitedir}/twisted/plugins/*
