@@ -1,5 +1,6 @@
 removed_sources:
   TwistedNames-13.0.0.tar.bz2: e0e00e51e7e9609e530f063cf5d291930de65f73
   TwistedNames-13.1.0.tar.bz2: 03608fdb745942d1cd6600cc45dc091158bf2f2b
-sources:
   TwistedNames-13.2.0.tar.bz2: 97ee9d6e4a9bcee663cd0080078281be9ad1d26c
+sources:
+  TwistedNames-14.0.0.tar.bz2: 7ca90497a36c46c316bb41f9568e66eb39377096

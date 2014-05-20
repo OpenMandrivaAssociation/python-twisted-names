@@ -6,13 +6,14 @@
 %define debug_package %{nil}
 
 Summary:	An DNS protocol implementation with client and server
+
 Name:		python-twisted-names
-Version:	13.2.0
+Version:	14.0.0
 Release:	1
 License:	MIT
 Group:		Development/Python
 Url:		http://twistedmatrix.com/trac/wiki/TwistedNames
-Source0:	http://twistedmatrix.com/Releases/Names/13.2/TwistedNames-%{version}.tar.bz2
+Source0:	http://twistedmatrix.com/Releases/Names/14.0/TwistedNames-%{version}.tar.bz2
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python-twisted-core
 Requires:	python-twisted-core
@@ -32,7 +33,7 @@ commonly used record types as well as a replacement for the blocking
 gethostbyname() function provided by the Python stdlib socket module.
 
 %prep
-%setup -qn TwistedNames-%version
+%setup -qn TwistedNames-%{version}
 
 %build
 %__python setup.py build
@@ -47,6 +48,7 @@ gethostbyname() function provided by the Python stdlib socket module.
 %{py_platsitedir}/twisted/names/*
 %{py_platsitedir}/twisted/plugins/*
 %{py_platsitedir}/*.egg-info
+
 
 
 
