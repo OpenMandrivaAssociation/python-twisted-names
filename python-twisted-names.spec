@@ -12,7 +12,7 @@ Version:	14.0.0
 Release:	2
 License:	MIT
 Group:		Development/Python
-Url:		http://twistedmatrix.com/trac/wiki/TwistedNames
+Url:		https://twistedmatrix.com/trac/wiki/TwistedNames
 Source0:	http://twistedmatrix.com/Releases/Names/14.0/TwistedNames-%{version}.tar.bz2
 BuildRequires:	pkgconfig(python)
 BuildRequires:	python-twisted-core
